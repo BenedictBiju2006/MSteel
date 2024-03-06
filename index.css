@@ -1,0 +1,45 @@
+body{
+    background-image: url(IMG_7536.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title{
+    font-size: 200px;
+    font-family: "Bevan", monospace;
+    font-weight: 700;
+    font-style: normal;
+    color: white; 
+    text-shadow: 0px 0px 120px black;
+}
+.title-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bar{
+    display: flex;
+    justify-content: right;
+    padding-top: 20px;
+    padding-right:15px;
+}
+
+.nav-text button{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 7px;
+    font-family: "Bevan", monospace;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    text-shadow: 0px 0px 12px black;
+    border-style: solid;
+    border-radius: 7px;
+    border-color: white;
+    transition-duration: 1s;
+}
+.nav-text button:hover{
+    background-color: white;
+    color: black;
+    text-shadow: none;
+}
