@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+    color: silver;
+}
+.page-container{
+    display: flex;
+    flex-direction: column;
+}
+.nav-container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family: 'Montserrat';
+    font-size: 70px;
+    padding-top:3vh;
+    height: 5vh;
+    width: 100%;
+}
+
+.nav-contact, .nav-about{
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-style: solid;
+    border-color: silver;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+    transition-property: background-color;
+}
+.nav-contact:hover, .nav-about:hover{
+    background-color: white;
+    border-color: white;
+    color: black;
+}
+.page-container{
+    justify-content: center;
+    align-items: center;
+}
+.logo-container{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.logo{
+    height: 50%;
+    
+}
