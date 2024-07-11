@@ -1,13 +1,13 @@
 body {
+    margin: 0;
     background-color: black;
     color: silver;
-}
-.page-container{
     display: flex;
     flex-direction: column;
-    width:100%
 }
 .nav-container{
+    position:fixed;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items:center;
@@ -35,6 +35,12 @@ body {
     border-color: white;
     color: black;
 }
+.main-page-container{
+    display: flex;
+    flex-direction: column;
+    width:100%
+}
+
 .page-container{
     justify-content: center;
     align-items: center;
@@ -48,5 +54,9 @@ body {
 }
 .logo{
     height: 50%;
-    
+    z-index: -10;
+}
+
+.introduction-page-container{
+    height: 1000px;
 }
