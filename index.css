@@ -5,6 +5,9 @@ body {
     display: flex;
     flex-direction: column;
 }
+p{
+    display: inline;
+}
 .nav-container{
     position:fixed;
     top: 0;
@@ -48,18 +51,31 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 1vw;
+    row-gap: 3vw;
 }
 .logo{
     height: 50%;
-    z-index: -10;
 }
-.title{
+.tagline-container{
     color: white;
     font-family: "Montserrat";
-    font-size: 30px;
+    font-size: 5vw;
+    font-weight: 300;
+}
+.typewrite{
+    text-decoration: none;
+}
+.wrap{
+    color: white;
+    font-style: italic;
 }
 
-.introduction-page-container{
-    height: 1000px;
+.about-page-container{
+    background-color: rgb(5, 5, 5);
+    color: white;
+    height: 370px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10vw;
 }
