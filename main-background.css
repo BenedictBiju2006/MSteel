@@ -2,9 +2,7 @@
 .area{
     background: black;  
     width: 100%;
-    height:100vh;
     
-   
 }
 
 .circles{
@@ -13,27 +11,26 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+    height: 100vh;
 }
-
 .circles li{
     position: absolute;
     display: block;
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(31,31,31, 0.7);
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
     transition-property: background-color, opacity;
     animation: animate 25s linear infinite;
-    top: -350px;
-    
+    top: 0px;   
 }
-.circles li:hover{
-    background-color: rgb(255, 255, 255);
-    opacity: 1;
-    transition-duration:0.5s;
+@media only screen and (max-width: 600px){
+    .circles li{
+        visibility: hidden;
+    }
 }
+
 
 .circles li:nth-child(1){
     left: 25%;
@@ -45,8 +42,8 @@
 
 .circles li:nth-child(2){
     left: 10%;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     animation-delay: 2s;
     animation-duration: 12s;
 }
@@ -116,13 +113,11 @@
     0%{
         transform: translateY(0) rotate(0deg);
         opacity: 1;
-        border-radius: 0;
     }
 
     100%{
         transform: translateY(1000px) rotate(720deg);
         opacity: 0;
-        border-radius: 50%;
     }
 
 }
