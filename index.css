@@ -9,6 +9,7 @@ p{
     display: inline;
 }
 .nav-container{
+    z-index: 10;
     position:fixed;
     top: 0;
     display: flex;
@@ -40,27 +41,29 @@ p{
     color: rgb(255, 255, 255);
 }
 .main-page-container{
-    display: flex;
-    flex-direction: column;
-    width:100%
-}
-
-.logo-container{
     height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 3vw;
+    width:100%;
+    padding-top: 9vh;
+}
+
+.logo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
 }
 .logo{
-    height: 50%;
+    height: 80%;
 }
 .tagline-container{
-    color: white;
+    color:whitesmoke;
     font-family: "Montserrat";
-    font-size: 5vw;
-    font-weight: 300;
+    font-size: 3vw;
+    font-weight: 100;
 }
 .typewrite{
     text-decoration: none;
@@ -69,9 +72,8 @@ p{
     color: white;
     font-style: italic;
 }
-
 .about-page-container{
-    background-color: rgb(5, 5, 5);
+    background:whitesmoke;
     color: white;
     height: 370px;
     display: flex;
