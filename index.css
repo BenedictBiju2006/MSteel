@@ -60,7 +60,7 @@ p{
 .logo{
     height: 80%;
     width:100%;
-    object-fit: fill;
+    object-fit: scale-down;
 }
 .tagline-container{
     color:whitesmoke;
@@ -84,6 +84,11 @@ p{
 .tagline-container span{
     margin-left:-100px;
     animation: slidein 10s infinite;
+}
+@media  only screen and (max-width: 550px) {
+    .tagline-container{
+        font-size: 1.5rem;
+    }
 }
 @keyframes showup {
     0% {opacity:0;}
