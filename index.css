@@ -16,7 +16,7 @@ p{
     justify-content: center;
     align-items:center;
     font-family: 'Montserrat';
-    font-size: 20px;
+    font-size: 1.3rem;
     padding-top:3vh;
     padding-bottom: 3vh;
     height: 5vh;
@@ -47,7 +47,7 @@ p{
     align-items: center;
     justify-content: center;
     width:100%;
-    padding-top: 9vh;
+    padding-top: calc(3vh + 3vh + 5vh);
 }
 
 .logo-container{
@@ -58,12 +58,52 @@ p{
 }
 .logo{
     height: 80%;
+    width:100%;
+    object-fit: fill;
 }
 .tagline-container{
     color:whitesmoke;
     font-family: "Montserrat";
-    font-size: 3vw;
+    font-size: 3rem;
     font-weight: 100;
+    white-space: nowrap;
+}
+.tagline-container div{
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.tagline-container:first-of-type div{
+    animation: showup 10s infinite;
+}
+.tagline-container:last-of-type div{
+    width: 0px;
+    animation: reveal 10s infinite;
+}
+.tagline-container span{
+    margin-left:-100px;
+    animation: slidein 10s infinite;
+}
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px;}
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px;}
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:auto;}
+    80% {opacity:1;}
+    100% {opacity:0;width:auto;}
 }
 .typewrite{
     text-decoration: none;
