@@ -48,6 +48,7 @@ p{
     justify-content: center;
     width:100%;
     padding-top: calc(3vh + 3vh + 5vh);
+    overflow: hidden;
 }
 
 .logo-container{
